@@ -1,0 +1,23 @@
+<link rel="import" href="../bower_components/polymer/polymer.html">
+
+<link rel="import" href="todo-data.html">
+<link rel="import" href="todo-list.html">
+
+<dom-module id="todo-view">
+    <template>
+    	<div>
+    		<todo-data todos = {{todos}}></todo-data>
+            <h3>Completed items</h3>
+            <todo-list filter-by= "completed" todos = {{todos}}></todo-list>
+            <h3>Uncompleted items</h3>
+            <todo-list filter-by ="uncompleted" todos = {{todos}}></todo-list>
+    	</div>
+    </template>
+    <script>
+    (function() {
+        Polymer({
+            is: 'todo-view',
+        });
+    })();
+    </script>
+</dom-module>
