@@ -4,7 +4,7 @@
     <template>
         <ul>
             <template is = "dom-repeat" as="todo" items={{todos}} observe="done" filter="{{_filter(filterBy)}}">
-                <todo-item todo='{{todo}}'></todo-item>
+                <todo-item todo='{{todo}}' on-delete="delete"></todo-item>
             </template>
         </ul>
     </template>
@@ -28,6 +28,10 @@
                         return false;
                     }
                 }
+            },
+            delete: function(evt){
+                var index = this.todos.indexOf(evt.detail);
+                this.splice('todos',index,1);
             }
         });
     })();
