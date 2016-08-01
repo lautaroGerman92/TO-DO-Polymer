@@ -1,0 +1,27 @@
+{
+  "name": "todoapp",
+  "homepage": "https://github.com/lautaroGerman92/TO-DO-Polymer",
+  "authors": [
+    "Lautaro Germán <laut.german@gmail.com>"
+  ],
+  "description": "todo app with polymer",
+  "main": "",
+  "keywords": [
+    "todo",
+    "app"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#^1.6.0",
+    "iron-elements": "^1.0.10",
+    "paper-elements": "^1.0.7"
+  }
+}
